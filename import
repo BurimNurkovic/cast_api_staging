@@ -1,0 +1,6 @@
+#!/bin/bash
+heroku pg:backups capture -r live
+curl -o latest.dump `heroku pg:backups public-url -r live`
+pg_restore --verbose --clean --no-acl --no-owner -h localhost -d cast_api_development latest.dump
+
+# heroku pg:backups restore 'https://xfrtu.s3.amazonaws.com/a28a8448-7262-4e66-a0f0-5835938a61b4/2016-04-13T17%3A42%3A15Z/479740a6-327e-4f75-a45d-43feb034e8c2?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAJQE5E3XOYH2LQHPQ%2F20160413%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20160413T182329Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=f3e55e9c6ae187cf27e91b1fd483f7f76fc3715de305d2189bde1f4b196c0ddf' DATABASE_URL -r staging

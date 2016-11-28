@@ -1,0 +1,34 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.amazon.com/auth/O2/tokeninfo?access_token=Atza%7CIQEBLjAsAhRDnEysxZ1o_T78T-NNOhakFAeLJgIUFM3-0w07wNy9dM41cCE2CUNc6iIwenJ2FbFdMolgVZmNGiPQ3O0uBvhAhjBoh_kzR_87oZLu2Ibjj-yL-pGjHCuBSr3ev9IiRVzeAUOiFpKDK-Tnqi88jgtyDtxAcmwNroIB4rEksaIEWbaay1hN11U4mszmaAdBcl2wt3BEhZ6suniEnPJNIHz9XNYqbRuWpY82olmS1p5Ls4iQQwakGCz1SV0EeUbxM2A7WNyD-PkoFF5cPF09HLzQVtuDDWWuto-HgwGh2xyKg6-8qNw_NwyEVuhAa_R6BsEDp3CZm_XixGVcY5AxcovF3TKNiXTx2102PKU
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 04 Mar 2015 22:53:54 GMT
+      Server:
+      - Server
+      X-Amzn-Requestid:
+      - 562db4cd-c2c1-11e4-80ae-1194f72365a6
+      X-Amz-Date:
+      - Wed, 04 Mar 2015 22:53:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '247'
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: '{"exp":3022,"iss":"https://www.amazon.com","aud":"amzn1.application-oa2-client.a7554bd335df47c68a8c5824e3efa4ab","user_id":"amzn1.account.AGCWGSWZA4E5XYQGFUEYNWIQ5LDQ","app_id":"amzn1.application.815ec1d6b32e487980ca799f1456de61","iat":1425509057}'
+    http_version: 
+  recorded_at: Wed, 04 Mar 2015 22:53:55 GMT
+recorded_with: VCR 2.9.2

@@ -1,0 +1,8 @@
+1. 9AM, 12PM, 6PM local time notifications - Done
+2. Qualify for notification every 30 days
+3. Dont worry about catch all  - Done
+4. Temperature conditions (ignore humidity for now) - Done
+5. Push service - Need to do something with Amazon tags
+6. Dev app for apple - Done awaiting test
+7. Prod app for apple - Done awaiting test
+8. App for GCM - Done awaiting test

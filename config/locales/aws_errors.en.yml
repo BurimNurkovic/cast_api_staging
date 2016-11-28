@@ -1,0 +1,24 @@
+en:
+  aws_errors:
+    'CastAPI_NotInitializedCart': 'Current cart is not initialized'
+    'CastAPI_NotFoundCartItem': 'Product not Found at Cart'
+    'AWS_MissingParameters': 'This request had some invalid/missing parameters'
+    'AWS_ECommerceService_ItemNotEligibleForCart': 'Item not available'
+    'AWS_ECommerceService_ItemNotAccessible': 'Product not found at Amazon'
+    'AWS_ECommerceService_ItemAlreadyInCart': 'This item is already at the Cart'
+    'AWS_ECommerceService_InvalidQuantity': 'Sorry the amount you selected is not available. Please make another selection.'
+
+# {"Code"=>"AWS.ECommerceService.ItemNotAccessible", "Message"=>"This item is not accessible through the Product Advertising API."}
+
+# {"Code"=>"AWS.ECommerceService.ItemNotEligibleForCart", "Message"=>"The item you specified, B00JV1TIZC, is not eligible to be added to the cart. Check the item's availability to make sure it is available."}
+
+# Removing an item that don't exist
+# {"Code"=>"AWS.MissingParameters", "Message"=>"Your request is missing required parameters. Required parameters include CartItemId."}
+
+# {"Code"=>"AWS.ECommerceService.ItemAlreadyInCart", "Message"=>"The item you specified, B001TJBKEG, is already in your cart."}
+
+# {'Code' => 'CastAPI.NotFoundCartItem'}
+
+# {"Error"=>
+  # [{"Code"=>"AWS.MissingParameters", "Message"=>"Your request is missing required parameters. Required parameters include CartId."},
+   # {"Code"=>"AWS.MissingParameters", "Message"=>"Your request is missing required parameters. Required parameters include HMAC."}]}

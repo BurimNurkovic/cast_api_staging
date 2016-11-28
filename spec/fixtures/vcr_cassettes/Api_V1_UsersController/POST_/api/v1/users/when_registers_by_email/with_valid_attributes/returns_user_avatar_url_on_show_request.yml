@@ -1,0 +1,75 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.amazon.com/auth/O2/tokeninfo?access_token=Atza%7CIQEBLjAsAhRDnEysxZ1o_T78T-NNOhakFAeLJgIUFM3-0w07wNy9dM41cCE2CUNc6iIwenJ2FbFdMolgVZmNGiPQ3O0uBvhAhjBoh_kzR_87oZLu2Ibjj-yL-pGjHCuBSr3ev9IiRVzeAUOiFpKDK-Tnqi88jgtyDtxAcmwNroIB4rEksaIEWbaay1hN11U4mszmaAdBcl2wt3BEhZ6suniEnPJNIHz9XNYqbRuWpY82olmS1p5Ls4iQQwakGCz1SV0EeUbxM2A7WNyD-PkoFF5cPF09HLzQVtuDDWWuto-HgwGh2xyKg6-8qNw_NwyEVuhAa_R6BsEDp3CZm_XixGVcY5AxcovF3TKNiXTx2102PKU
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 05 Mar 2015 23:18:38 GMT
+      Server:
+      - Server
+      X-Amzn-Requestid:
+      - f4a079f2-c38d-11e4-b9b3-1704b1168158
+      X-Amz-Date:
+      - Thu, 05 Mar 2015 23:18:39 GMT
+      X-Amzn-Errortype:
+      - InvalidTokenException:http://internal.amazon.com/coral/com.amazon.panda/
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      Vary:
+      - Accept-Encoding,User-Agent
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_token","error_description":"The request has an invalid
+        parameter : access_token"}'
+    http_version: 
+  recorded_at: Thu, 05 Mar 2015 23:18:39 GMT
+- request:
+    method: get
+    uri: https://api.amazon.com/auth/O2/tokeninfo?access_token=Atza%7CIQEBLjAsAhRDnEysxZ1o_T78T-NNOhakFAeLJgIUFM3-0w07wNy9dM41cCE2CUNc6iIwenJ2FbFdMolgVZmNGiPQ3O0uBvhAhjBoh_kzR_87oZLu2Ibjj-yL-pGjHCuBSr3ev9IiRVzeAUOiFpKDK-Tnqi88jgtyDtxAcmwNroIB4rEksaIEWbaay1hN11U4mszmaAdBcl2wt3BEhZ6suniEnPJNIHz9XNYqbRuWpY82olmS1p5Ls4iQQwakGCz1SV0EeUbxM2A7WNyD-PkoFF5cPF09HLzQVtuDDWWuto-HgwGh2xyKg6-8qNw_NwyEVuhAa_R6BsEDp3CZm_XixGVcY5AxcovF3TKNiXTx2102PKU
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 05 Mar 2015 23:18:38 GMT
+      Server:
+      - Server
+      X-Amzn-Requestid:
+      - f502e4df-c38d-11e4-b3ca-6f479411b737
+      X-Amz-Date:
+      - Thu, 05 Mar 2015 23:18:39 GMT
+      X-Amzn-Errortype:
+      - InvalidTokenException:http://internal.amazon.com/coral/com.amazon.panda/
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      Vary:
+      - Accept-Encoding,User-Agent
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_token","error_description":"The request has an invalid
+        parameter : access_token"}'
+    http_version: 
+  recorded_at: Thu, 05 Mar 2015 23:18:39 GMT
+recorded_with: VCR 2.9.2

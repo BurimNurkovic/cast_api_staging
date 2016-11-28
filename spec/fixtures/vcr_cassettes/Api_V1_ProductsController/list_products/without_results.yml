@@ -1,0 +1,530 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/c86d37088090cd44/conditions/q/zmw:00000.1.83779.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/1.0.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.060'
+      Last-Modified:
+      - Wed, 08 Jun 2016 11:27:07 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Expires:
+      - Wed, 08 Jun 2016 11:27:07 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 08 Jun 2016 11:27:07 GMT
+      Content-Length:
+      - '2562'
+      Connection:
+      - close
+      Set-Cookie:
+      - DT=1465385227:8307:365-f6; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+      - Prefs=FAVS:1|WXSN:1|PWSOBS:1|WPHO:1|PHOT:1|RADC:0|RADALL:0|HIST0:NULL|GIFT:1|PHOTOTHUMBS:50|;
+        path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"conditions\": 1\n  }\n\t}\n  ,\t\"current_observation\":
+        {\n\t\t\"image\": {\n\t\t\"url\":\"http://icons.wxug.com/graphics/wu2/logo_130x80.png\",\n\t\t\"title\":\"Weather
+        Underground\",\n\t\t\"link\":\"http://www.wunderground.com\"\n\t\t},\n\t\t\"display_location\":
+        {\n\t\t\"full\":\"Marte, Brazil\",\n\t\t\"city\":\"Marte\",\n\t\t\"state\":\"\",\n\t\t\"state_name\":\"Brazil\",\n\t\t\"country\":\"BZ\",\n\t\t\"country_iso3166\":\"BR\",\n\t\t\"zip\":\"00000\",\n\t\t\"magic\":\"1\",\n\t\t\"wmo\":\"83779\",\n\t\t\"latitude\":\"-23.52000046\",\n\t\t\"longitude\":\"-46.63000107\",\n\t\t\"elevation\":\"722.00000000\"\n\t\t},\n\t\t\"observation_location\":
+        {\n\t\t\"full\":\"Sao Paulo, \",\n\t\t\"city\":\"Sao Paulo\",\n\t\t\"state\":\"\",\n\t\t\"country\":\"BZ\",\n\t\t\"country_iso3166\":\"BR\",\n\t\t\"latitude\":\"-23.62669182\",\n\t\t\"longitude\":\"-46.65537643\",\n\t\t\"elevation\":\"2635
+        ft\"\n\t\t},\n\t\t\"estimated\": {\n\t\t},\n\t\t\"station_id\":\"SBSP\",\n\t\t\"observation_time\":\"Last
+        Updated on June 8, 8:00 AM BRT\",\n\t\t\"observation_time_rfc822\":\"Wed,
+        08 Jun 2016 08:00:00 -0300\",\n\t\t\"observation_epoch\":\"1465383600\",\n\t\t\"local_time_rfc822\":\"Wed,
+        08 Jun 2016 08:27:07 -0300\",\n\t\t\"local_epoch\":\"1465385227\",\n\t\t\"local_tz_short\":\"BRT\",\n\t\t\"local_tz_long\":\"America/Sao_Paulo\",\n\t\t\"local_tz_offset\":\"-0300\",\n\t\t\"weather\":\"Partly
+        Cloudy\",\n\t\t\"temperature_string\":\"52 F (11 C)\",\n\t\t\"temp_f\":52,\n\t\t\"temp_c\":11,\n\t\t\"relative_humidity\":\"82%\",\n\t\t\"wind_string\":\"From
+        the SE at 5 MPH\",\n\t\t\"wind_dir\":\"SE\",\n\t\t\"wind_degrees\":140,\n\t\t\"wind_mph\":5,\n\t\t\"wind_gust_mph\":0,\n\t\t\"wind_kph\":7,\n\t\t\"wind_gust_kph\":0,\n\t\t\"pressure_mb\":\"1022\",\n\t\t\"pressure_in\":\"30.18\",\n\t\t\"pressure_trend\":\"0\",\n\t\t\"dewpoint_string\":\"46
+        F (8 C)\",\n\t\t\"dewpoint_f\":46,\n\t\t\"dewpoint_c\":8,\n\t\t\"heat_index_string\":\"NA\",\n\t\t\"heat_index_f\":\"NA\",\n\t\t\"heat_index_c\":\"NA\",\n\t\t\"windchill_string\":\"NA\",\n\t\t\"windchill_f\":\"NA\",\n\t\t\"windchill_c\":\"NA\",\n\t\t\"feelslike_string\":\"52
+        F (11 C)\",\n\t\t\"feelslike_f\":\"52\",\n\t\t\"feelslike_c\":\"11\",\n\t\t\"visibility_mi\":\"6.2\",\n\t\t\"visibility_km\":\"10.0\",\n\t\t\"solarradiation\":\"--\",\n\t\t\"UV\":\"1\",\"precip_1hr_string\":\"-9999.00
+        in (-9999.00 mm)\",\n\t\t\"precip_1hr_in\":\"-9999.00\",\n\t\t\"precip_1hr_metric\":\"--\",\n\t\t\"precip_today_string\":\"0.00
+        in (0.0 mm)\",\n\t\t\"precip_today_in\":\"0.00\",\n\t\t\"precip_today_metric\":\"0.0\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"forecast_url\":\"http://www.wunderground.com/global/stations/83779.html\",\n\t\t\"history_url\":\"http://www.wunderground.com/history/airport/SBSP/2016/6/8/DailyHistory.html\",\n\t\t\"ob_url\":\"http://www.wunderground.com/cgi-bin/findweather/getForecast?query=-23.62669182,-46.65537643\",\n\t\t\"nowcast\":\"\"\n\t}\n}\n"
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:08 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/api/c86d37088090cd44/forecast10day/q/zmw:00000.1.83779.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Connection:
+      - close
+      User-Agent:
+      - http.rb/1.0.2
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/2.2.15 (CentOS)
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      X-Creationtime:
+      - '0.031'
+      Last-Modified:
+      - Wed, 08 Jun 2016 11:27:08 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Expires:
+      - Wed, 08 Jun 2016 11:27:08 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 08 Jun 2016 11:27:08 GMT
+      Content-Length:
+      - '17772'
+      Connection:
+      - close
+      Set-Cookie:
+      - DT=1465385228:21326:365-u4; path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT;
+        domain=.wunderground.com
+      - Prefs=FAVS:1|WXSN:1|PWSOBS:1|WPHO:1|PHOT:1|RADC:0|RADALL:0|HIST0:NULL|GIFT:1|PHOTOTHUMBS:50|EXPFCT:1|;
+        path=/; expires=Fri, 01-Jan-2020 00:00:00 GMT; domain=.wunderground.com
+    body:
+      encoding: UTF-8
+      string: "\n{\n  \"response\": {\n  \"version\":\"0.1\",\n  \"termsofService\":\"http://www.wunderground.com/weather/api/d/terms.html\",\n
+        \ \"features\": {\n  \"forecast10day\": 1\n  }\n\t}\n\t\t,\n\t\"forecast\":{\n\t\t\"txt_forecast\":
+        {\n\t\t\"date\":\"6:17 AM BRT\",\n\t\t\"forecastday\": [\n\t\t{\n\t\t\"period\":0,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Partly
+        cloudy. High 67F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy skies. High near 20C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":1,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies early will give way to cloudy
+        skies late. Low 47F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy this evening with more clouds for overnight. Low 9C. Winds light and
+        variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":2,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Cloudy
+        early with partial sunshine expected late. High 62F. Winds SE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Cloudy
+        skies early, then partly cloudy in the afternoon. High 17C. Winds SE at 10
+        to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":3,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy in the evening with more clouds
+        for later at night. Low 46F. Winds ESE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy early with increasing clouds overnight. Low 8C. Winds ESE at 10 to
+        15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":4,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Sun
+        and a few passing clouds. High 69F. NNE winds shifting to W at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"A
+        few clouds early, otherwise mostly sunny. High 21C. Winds NW at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":5,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"A few clouds. Low near 45F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"A
+        few clouds. Low 7C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":6,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Saturday\",\n\t\t\"fcttext\":\"Sunny
+        along with a few clouds. High 61F. Winds SSE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Mostly
+        sunny skies. High 16C. Winds SSE at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":7,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Saturday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 42F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Partly cloudy skies. Low 6C. Winds
+        light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":8,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Sunday\",\n\t\t\"fcttext\":\"Some
+        clouds in the morning will give way to mainly sunny skies for the afternoon.
+        High 62F. Winds SE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Some clouds
+        in the morning will give way to mainly sunny skies for the afternoon. High
+        17C. Winds SE at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":9,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Sunday
+        Night\",\n\t\t\"fcttext\":\"Clear skies. Low 42F. Winds ESE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Clear.
+        Low 6C. Winds ESE at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":10,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Monday\",\n\t\t\"fcttext\":\"A
+        mainly sunny sky. High 62F. Winds ESE at 10 to 15 mph.\",\n\t\t\"fcttext_metric\":\"A
+        mainly sunny sky. High 17C. Winds ESE at 15 to 25 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":11,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Monday
+        Night\",\n\t\t\"fcttext\":\"A mostly clear sky. Low 46F. Winds E at 5 to 10
+        mph.\",\n\t\t\"fcttext_metric\":\"A mostly clear sky. Low 8C. Winds E at 10
+        to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":12,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Tuesday\",\n\t\t\"fcttext\":\"Some
+        clouds in the morning will give way to mainly sunny skies for the afternoon.
+        High near 70F. Winds ENE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy skies. High 21C. Winds ENE at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":13,\n\t\t\"icon\":\"nt_clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_clear.gif\",\n\t\t\"title\":\"Tuesday
+        Night\",\n\t\t\"fcttext\":\"Clear skies with a few passing clouds. Low around
+        50F. Winds NE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Mostly clear skies.
+        Low around 10C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":14,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Wednesday\",\n\t\t\"fcttext\":\"Mainly
+        sunny. High around 75F. Winds NNE at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Mostly
+        sunny. High 24C. Winds NNE at 10 to 15 km/h.\",\n\t\t\"pop\":\"0\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":15,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Wednesday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy. Low 53F. Winds light and variable.\",\n\t\t\"fcttext_metric\":\"Partly
+        cloudy skies. Low 12C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":16,\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"title\":\"Thursday\",\n\t\t\"fcttext\":\"Partly
+        cloudy skies. High around 75F. Winds E at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"Some
+        clouds in the morning will give way to mainly sunny skies for the afternoon.
+        High 24C. Winds E at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":17,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Thursday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low around 55F. Winds light
+        and variable.\",\n\t\t\"fcttext_metric\":\"A few clouds. Low 13C. Winds light
+        and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":18,\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"title\":\"Friday\",\n\t\t\"fcttext\":\"Sunshine
+        along with some cloudy intervals. High 74F. Winds N at 5 to 10 mph.\",\n\t\t\"fcttext_metric\":\"A
+        few clouds early, otherwise mostly sunny. High 24C. Winds N at 10 to 15 km/h.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t,\n\t\t{\n\t\t\"period\":19,\n\t\t\"icon\":\"nt_partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/nt_partlycloudy.gif\",\n\t\t\"title\":\"Friday
+        Night\",\n\t\t\"fcttext\":\"Partly cloudy skies. Low 56F. Winds light and
+        variable.\",\n\t\t\"fcttext_metric\":\"Some clouds early will give way to
+        generally clear conditions overnight. Low 13C. Winds light and variable.\",\n\t\t\"pop\":\"10\"\n\t\t}\n\t\t]\n\t\t},\n\t\t\"simpleforecast\":
+        {\n\t\t\"forecastday\": [\n\t\t{\"date\":{\n\t\"epoch\":\"1465423200\",\n\t\"pretty\":\"7:00
+        PM BRT on June 08, 2016\",\n\t\"day\":8,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":159,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":1,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"67\",\n\t\t\"celsius\":\"19\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"47\",\n\t\t\"celsius\":\"8\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 5,\n\t\t\"kph\":
+        8,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 225\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        4,\n\t\t\"kph\": 6,\n\t\t\"dir\": \"SW\",\n\t\t\"degrees\": 225\n\t\t},\n\t\t\"avehumidity\":
+        65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465509600\",\n\t\"pretty\":\"7:00
+        PM BRT on June 09, 2016\",\n\t\"day\":9,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":160,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":2,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"62\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"46\",\n\t\t\"celsius\":\"8\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 130\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        130\n\t\t},\n\t\t\"avehumidity\": 73,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465596000\",\n\t\"pretty\":\"7:00
+        PM BRT on June 10, 2016\",\n\t\"day\":10,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":161,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":3,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"69\",\n\t\t\"celsius\":\"21\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"45\",\n\t\t\"celsius\":\"7\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"NW\",\n\t\t\"degrees\": 314\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"NW\",\n\t\t\"degrees\":
+        314\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465682400\",\n\t\"pretty\":\"7:00
+        PM BRT on June 11, 2016\",\n\t\"day\":11,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":162,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sat\",\n\t\"weekday\":\"Saturday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":4,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"61\",\n\t\t\"celsius\":\"16\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"42\",\n\t\t\"celsius\":\"6\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\": 154\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"SSE\",\n\t\t\"degrees\":
+        154\n\t\t},\n\t\t\"avehumidity\": 67,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465768800\",\n\t\"pretty\":\"7:00
+        PM BRT on June 12, 2016\",\n\t\"day\":12,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":163,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Sun\",\n\t\"weekday\":\"Sunday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":5,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"62\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"42\",\n\t\t\"celsius\":\"6\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\": 137\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"SE\",\n\t\t\"degrees\":
+        137\n\t\t},\n\t\t\"avehumidity\": 62,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465855200\",\n\t\"pretty\":\"7:00
+        PM BRT on June 13, 2016\",\n\t\"day\":13,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":164,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Mon\",\n\t\"weekday\":\"Monday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":6,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"62\",\n\t\t\"celsius\":\"17\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"46\",\n\t\t\"celsius\":\"8\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 15,\n\t\t\"kph\":
+        24,\n\t\t\"dir\": \"ESE\",\n\t\t\"degrees\": 103\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 10,\n\t\t\"kph\": 16,\n\t\t\"dir\": \"ESE\",\n\t\t\"degrees\":
+        103\n\t\t},\n\t\t\"avehumidity\": 65,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1465941600\",\n\t\"pretty\":\"7:00
+        PM BRT on June 14, 2016\",\n\t\"day\":14,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":165,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Tue\",\n\t\"weekday\":\"Tuesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":7,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"70\",\n\t\t\"celsius\":\"21\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"50\",\n\t\t\"celsius\":\"10\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\": 75\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 7,\n\t\t\"kph\": 11,\n\t\t\"dir\": \"ENE\",\n\t\t\"degrees\":
+        75\n\t\t},\n\t\t\"avehumidity\": 66,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1466028000\",\n\t\"pretty\":\"7:00
+        PM BRT on June 15, 2016\",\n\t\"day\":15,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":166,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Wed\",\n\t\"weekday\":\"Wednesday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":8,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"75\",\n\t\t\"celsius\":\"24\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"53\",\n\t\t\"celsius\":\"12\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":0,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"NNE\",\n\t\t\"degrees\": 18\n\t\t},\n\t\t\"avewind\":
+        {\n\t\t\"mph\": 6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"NNE\",\n\t\t\"degrees\":
+        18\n\t\t},\n\t\t\"avehumidity\": 70,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\":
+        0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1466114400\",\n\t\"pretty\":\"7:00
+        PM BRT on June 16, 2016\",\n\t\"day\":16,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":167,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Thu\",\n\t\"weekday\":\"Thursday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":9,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"75\",\n\t\t\"celsius\":\"24\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"55\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Partly
+        Cloudy\",\n\t\t\"icon\":\"partlycloudy\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/partlycloudy.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"E\",\n\t\t\"degrees\": 83\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"E\",\n\t\t\"degrees\": 83\n\t\t},\n\t\t\"avehumidity\":
+        69,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t,\n\t\t{\"date\":{\n\t\"epoch\":\"1466200800\",\n\t\"pretty\":\"7:00
+        PM BRT on June 17, 2016\",\n\t\"day\":17,\n\t\"month\":6,\n\t\"year\":2016,\n\t\"yday\":168,\n\t\"hour\":19,\n\t\"min\":\"00\",\n\t\"sec\":0,\n\t\"isdst\":\"0\",\n\t\"monthname\":\"June\",\n\t\"monthname_short\":\"Jun\",\n\t\"weekday_short\":\"Fri\",\n\t\"weekday\":\"Friday\",\n\t\"ampm\":\"PM\",\n\t\"tz_short\":\"BRT\",\n\t\"tz_long\":\"America/Sao_Paulo\"\n},\n\t\t\"period\":10,\n\t\t\"high\":
+        {\n\t\t\"fahrenheit\":\"74\",\n\t\t\"celsius\":\"23\"\n\t\t},\n\t\t\"low\":
+        {\n\t\t\"fahrenheit\":\"56\",\n\t\t\"celsius\":\"13\"\n\t\t},\n\t\t\"conditions\":\"Clear\",\n\t\t\"icon\":\"clear\",\n\t\t\"icon_url\":\"http://icons.wxug.com/i/c/k/clear.gif\",\n\t\t\"skyicon\":\"\",\n\t\t\"pop\":10,\n\t\t\"qpf_allday\":
+        {\n\t\t\"in\": 0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_day\": {\n\t\t\"in\":
+        0.00,\n\t\t\"mm\": 0\n\t\t},\n\t\t\"qpf_night\": {\n\t\t\"in\": 0.00,\n\t\t\"mm\":
+        0\n\t\t},\n\t\t\"snow_allday\": {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_day\":
+        {\n\t\t\"in\": 0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"snow_night\": {\n\t\t\"in\":
+        0.0,\n\t\t\"cm\": 0.0\n\t\t},\n\t\t\"maxwind\": {\n\t\t\"mph\": 10,\n\t\t\"kph\":
+        16,\n\t\t\"dir\": \"N\",\n\t\t\"degrees\": 8\n\t\t},\n\t\t\"avewind\": {\n\t\t\"mph\":
+        6,\n\t\t\"kph\": 10,\n\t\t\"dir\": \"N\",\n\t\t\"degrees\": 8\n\t\t},\n\t\t\"avehumidity\":
+        71,\n\t\t\"maxhumidity\": 0,\n\t\t\"minhumidity\": 0\n\t\t}\n\t\t]\n\t\t}\n\t}\n}\n"
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:08 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=frizz%20hold%20hair%20Y4awtFSQtV&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=fO46%2BHuPOTjx4tfjzxXb%2BEsPgS3ThDGBHeP71M4JlnE=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:08Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:08 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>6c46b344-3c19-4882-9636-f7b03f0db1f6</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="frizz hold hair Y4awtFSQtV"></Argument><Argument Name="Operation"
+        Value="ItemSearch"></Argument><Argument Name="ResponseGroup" Value="Small,
+        Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:08Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="fO46+HuPOTjx4tfjzxXb+EsPgS3ThDGBHeP71M4JlnE="></Argument></Arguments><RequestProcessingTime>0.0320768910000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>frizz
+        hold hair Y4awtFSQtV</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Dfrizz%2Bhold%2Bhair%2BY4awtFSQtV%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:09 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=emollient%20serum%20skin%20TdYByoIALL&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=fkYagdKapa39gOwnk/grtHGiT4O3CmjYeG5DEGrfH0Y=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:09Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:09 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>95b471a5-7e66-4baa-b387-c86d39ebb557</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="emollient serum skin TdYByoIALL"></Argument><Argument
+        Name="Operation" Value="ItemSearch"></Argument><Argument Name="ResponseGroup"
+        Value="Small, Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:09Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="fkYagdKapa39gOwnk/grtHGiT4O3CmjYeG5DEGrfH0Y="></Argument></Arguments><RequestProcessingTime>0.0320074180000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>emollient
+        serum skin TdYByoIALL</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Demollient%2Bserum%2Bskin%2BTdYByoIALL%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:10 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=frizz%20hair%20Y4awtFSQtV&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=KTQujQCEz/vDEGIN40FJVqf33h7H7vfN54h2Bb9MJTY=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:10Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:11 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>489e38ca-2963-4c3a-a847-d674914b9faa</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="frizz hair Y4awtFSQtV"></Argument><Argument Name="Operation"
+        Value="ItemSearch"></Argument><Argument Name="ResponseGroup" Value="Small,
+        Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:10Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="KTQujQCEz/vDEGIN40FJVqf33h7H7vfN54h2Bb9MJTY="></Argument></Arguments><RequestProcessingTime>0.0330443050000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>frizz
+        hair Y4awtFSQtV</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Dfrizz%2Bhair%2BY4awtFSQtV%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:11 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=emollient%20skin%20TdYByoIALL&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=/Jy3mFHB/XJqKqZgpXfhN%2B9TNjBvU4elRq7%2Bb7uvdzs=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:11Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:11 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>61ee7886-7852-4f6d-a464-71d6cf41db3f</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="emollient skin TdYByoIALL"></Argument><Argument Name="Operation"
+        Value="ItemSearch"></Argument><Argument Name="ResponseGroup" Value="Small,
+        Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:11Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="/Jy3mFHB/XJqKqZgpXfhN+9TNjBvU4elRq7+b7uvdzs="></Argument></Arguments><RequestProcessingTime>0.0321545260000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>emollient
+        skin TdYByoIALL</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Demollient%2Bskin%2BTdYByoIALL%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:12 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=hair%20Y4awtFSQtV&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=zsx3Eij/f8kAdezc05U%2B9b95FicUaCAeoiZn2MNHc2k=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:12Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:12 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>73f008eb-804e-4026-b375-56a2f24550e2</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="hair Y4awtFSQtV"></Argument><Argument Name="Operation"
+        Value="ItemSearch"></Argument><Argument Name="ResponseGroup" Value="Small,
+        Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:12Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="zsx3Eij/f8kAdezc05U+9b95FicUaCAeoiZn2MNHc2k="></Argument></Arguments><RequestProcessingTime>0.0420968710000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>hair
+        Y4awtFSQtV</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Dhair%2BY4awtFSQtV%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:13 GMT
+- request:
+    method: get
+    uri: https://webservices.amazon.com/onca/xml?AWSAccessKeyId=AKIAJYVTO265BHKQYDOA&AssociateTag=castb-20&ItemPage=1&Keywords=skin%20TdYByoIALL&Operation=ItemSearch&ResponseGroup=Small,%20Images,%20Offers&SearchIndex=Beauty&Service=AWSECommerceService&Signature=1jJ/F9e%2BB%2BH3S1IfqWRrhW6XnvumFmvEWWUyw8Lyerg=&SignatureMethod=HmacSHA256&SignatureVersion=2&Timestamp=2016-06-08T11:27:13Z&Version=2013-08-01
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)
+  response:
+    status:
+      code: 200
+      message: ''
+    headers:
+      Date:
+      - Wed, 08 Jun 2016 11:27:13 GMT
+      Server:
+      - Apache-Coyote/1.1
+      Content-Type:
+      - text/xml;charset=UTF-8
+      Vary:
+      - Accept-Encoding,User-Agent
+    body:
+      encoding: UTF-8
+      string: <?xml version="1.0" ?><ItemSearchResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2013-08-01"><OperationRequest><HTTPHeaders><Header
+        Name="UserAgent" Value="Jeff/1.5.1 (Language=Ruby; vagrant-ubuntu-trusty-64)"></Header></HTTPHeaders><RequestId>51653a30-5284-4d1b-980a-0acde8f3a9aa</RequestId><Arguments><Argument
+        Name="AWSAccessKeyId" Value="AKIAJYVTO265BHKQYDOA"></Argument><Argument Name="AssociateTag"
+        Value="castb-20"></Argument><Argument Name="ItemPage" Value="1"></Argument><Argument
+        Name="Keywords" Value="skin TdYByoIALL"></Argument><Argument Name="Operation"
+        Value="ItemSearch"></Argument><Argument Name="ResponseGroup" Value="Small,
+        Images, Offers"></Argument><Argument Name="SearchIndex" Value="Beauty"></Argument><Argument
+        Name="Service" Value="AWSECommerceService"></Argument><Argument Name="SignatureMethod"
+        Value="HmacSHA256"></Argument><Argument Name="SignatureVersion" Value="2"></Argument><Argument
+        Name="Timestamp" Value="2016-06-08T11:27:13Z"></Argument><Argument Name="Version"
+        Value="2013-08-01"></Argument><Argument Name="Signature" Value="1jJ/F9e+B+H3S1IfqWRrhW6XnvumFmvEWWUyw8Lyerg="></Argument></Arguments><RequestProcessingTime>0.0682695610000000</RequestProcessingTime></OperationRequest><Items><Request><IsValid>True</IsValid><ItemSearchRequest><ItemPage>1</ItemPage><Keywords>skin
+        TdYByoIALL</Keywords><ResponseGroup>Small</ResponseGroup><ResponseGroup>Images</ResponseGroup><ResponseGroup>Offers</ResponseGroup><SearchIndex>Beauty</SearchIndex></ItemSearchRequest><Errors><Error><Code>AWS.ECommerceService.NoExactMatches</Code><Message>We
+        did not find any matches for your request.</Message></Error></Errors></Request><TotalResults>0</TotalResults><TotalPages>0</TotalPages><MoreSearchResultsUrl>http://www.amazon.com/gp/redirect.html?linkCode=xm2&amp;SubscriptionId=AKIAJYVTO265BHKQYDOA&amp;location=http%3A%2F%2Fwww.amazon.com%2Fgp%2Fsearch%3Fkeywords%3Dskin%2BTdYByoIALL%26url%3Dsearch-alias%253Dbeauty&amp;tag=castb-20&amp;creative=386001&amp;camp=2025</MoreSearchResultsUrl></Items></ItemSearchResponse>
+    http_version: 
+  recorded_at: Wed, 08 Jun 2016 11:27:14 GMT
+recorded_with: VCR 3.0.1

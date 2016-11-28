@@ -1,0 +1,14 @@
+<div class='phone'>
+  <h3><%= truncate @blogentry.title, length: 25 %></h3>
+  <% 
+  if @blogentry.blog_type == 'video'
+    m = @blogentry.video_url.match(/\?v=(?<code>[\w-]+)/)
+  %>
+    <div class='img'>
+      <iframe width='350px' height='200px' src="https://www.youtube.com/embed/<%= m[:code] %>?autoplay=1" frameborder="0" allowfullscreen></iframe>
+    </div>
+  <% else %>
+    <div class='img' style='background-image: url(<%= @blogentry.image.url(:medium) %>)'></div>
+  <% end %>
+  <%= @blogentry.text.html_safe %>
+</div>

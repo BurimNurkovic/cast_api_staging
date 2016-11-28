@@ -1,0 +1,368 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.wunderground.com/auto/wui/geo/WXCurrentObXML/index.xml?query=37.8267,-122.423
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.4.0, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Wed, 03 Sep 2014 00:02:11 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.029'
+      Content-Type:
+      - text/xml
+      Expires:
+      - Wed, 03 Sep 2014 00:02:14 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 03 Sep 2014 00:02:14 GMT
+      Content-Length:
+      - '4128'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "\t<current_observation>\n\t\t<credit>Weather Underground NOAA Weather
+        Station</credit>\n\t\t<credit_URL>http://wunderground.com/</credit_URL>\n<termsofservice
+        link=\"http://www.wunderground.com/weather/api/d/terms.html\">This feed will
+        be deprecated. Please switch to http://www.wunderground.com/weather/api/</termsofservice>\n\t\t<image>\n\t\t<url>http://icons.wxug.com/graphics/wu2/logo_130x80.png</url>\n\t\t<title>Weather
+        Underground</title>\n\t\t<link>http://wunderground.com/</link>\n\t\t</image>\n
+        \ <display_location>\n  <full>San Francisco, CA</full>\n  <city>San Francisco</city>\n
+        \ <state>CA</state>\n  <state_name>California</state_name>\n  <country>US</country>\n
+        \ <country_iso3166>US</country_iso3166>\n  <zip>94133</zip>\n  <latitude>37.826700</latitude>\n
+        \ <longitude>-122.423000</longitude>\n  <elevation>29.00000000 ft</elevation>\n
+        \ </display_location>\n\t\t<observation_location>\n\t\t<full>Oakland, California</full>\n\t\t<city>Oakland</city>\n\t\t<state>California</state>\n\t\t<country>US</country>\n\t\t<country_iso3166>US</country_iso3166>\n\t\t<latitude>37.71780014</latitude>\n\t\t<longitude>-122.23294067</longitude>\n\t\t<elevation>7
+        ft</elevation>\n\t\t</observation_location>\n\t\t<station_id>KOAK</station_id>\n\t\t<observation_time>Last
+        Updated on September 2, 4:53 PM PDT</observation_time>\n\t\t<observation_time_rfc822>Tue,
+        02 Sep 2014 23:53:00 GMT</observation_time_rfc822>\n\t\t<observation_epoch>1409701980</observation_epoch>\n\t\t<local_time>September
+        2, 5:02 PM PDT</local_time>\n\t\t<local_time_rfc822>Wed, 03 Sep 2014 00:02:14
+        GMT</local_time_rfc822>\n\t\t<local_epoch>1409702534</local_epoch>\n\t\t<weather>Partly
+        Cloudy</weather>\n\t\t<temperature_string>69 F (21 C)</temperature_string>\n\t\t<temp_f>69</temp_f>\n\t\t<temp_c>21</temp_c>\n\t\t<relative_humidity>65%</relative_humidity>\n\t\t<wind_string>From
+        the WNW at 18 MPH </wind_string>\n\t\t<wind_dir>WNW</wind_dir>\n\t\t<wind_degrees>290</wind_degrees>\n\t\t<wind_mph>18</wind_mph>\n\t\t<wind_gust_mph></wind_gust_mph>\n\t\t<pressure_string>29.80
+        in (1009 mb)</pressure_string>\r\n\t\t<pressure_mb>1009</pressure_mb>\r\n\t\t<pressure_in>29.80</pressure_in>\r\n\t\t<dewpoint_string>57
+        F (14 C)</dewpoint_string>\r\n\t\t<dewpoint_f>57</dewpoint_f>\r\n\t\t<dewpoint_c>14</dewpoint_c>\r\n\t\t\r\n\t\t<heat_index_string>NA</heat_index_string>\r\n\t\t<heat_index_f>NA</heat_index_f>\r\n\t\t<heat_index_c>NA</heat_index_c>\r\n\t\t\r\n\t\t\r\n\t\t<windchill_string>NA</windchill_string>\r\n\t\t<windchill_f>NA</windchill_f>\r\n\t\t<windchill_c>NA</windchill_c>\r\n\t\t\r\n\t\t<visibility_mi>10.0</visibility_mi>\r\n\t\t<visibility_km>16.1</visibility_km>\r\n\t\t<icons>\r\n\t\t\t<icon_set
+        name=\"Default\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Smiley\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Generic\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Old School\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Cartoon\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Mobile\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Simple\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Contemporary\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Helen\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t\t<icon_set
+        name=\"Incredible\">\r\n\t\t\t\t<icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t\t\t</icon_set>\r\n\t\t</icons>\r\n\t\t<icon_url_base>http://icons.wxug.com/graphics/conds/</icon_url_base>\r\n\t\t<icon_url_name>.GIF</icon_url_name>\r\n\t\t<icon>partlycloudy</icon>\r\n\t\t<forecast_url>http://www.wunderground.com/US/CA/San_Francisco.html</forecast_url>\r\n\t\t<history_url>http://www.wunderground.com/history/airport/KOAK/2014/9/2/DailyHistory.html</history_url>\r\n\t\t<ob_url>http://www.wunderground.com/cgi-bin/findweather/getForecast?query=37.71780014,-122.23294067</ob_url>\r\n\t</current_observation>\r\n"
+    http_version: 
+  recorded_at: Wed, 03 Sep 2014 00:02:14 GMT
+- request:
+    method: get
+    uri: http://api.wunderground.com/auto/wui/geo/ForecastXML/index.xml?query=37.8267,-122.423
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      User-Agent:
+      - HTTPClient/1.0 (2.4.0, ruby 2.1.1 (2014-02-24))
+      Accept:
+      - "*/*"
+      Date:
+      - Wed, 03 Sep 2014 00:02:14 GMT
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - Apache/1.3.42 (Unix) PHP/5.3.2
+      X-Creationtime:
+      - '0.101'
+      Content-Type:
+      - text/xml
+      Expires:
+      - Wed, 03 Sep 2014 00:02:19 GMT
+      Cache-Control:
+      - max-age=0, no-cache
+      Pragma:
+      - no-cache
+      Date:
+      - Wed, 03 Sep 2014 00:02:19 GMT
+      Content-Length:
+      - '22588'
+      Connection:
+      - keep-alive
+    body:
+      encoding: UTF-8
+      string: "<?xml version=\"1.0\" ?>\n<forecast>\n\t\t<termsofservice link=\"http://www.wunderground.com/weather/api/d/terms.html\">This
+        feed will be deprecated. Please switch to http://www.wunderground.com/weather/api/</termsofservice>\n\t<txt_forecast>\n
+        \ <date>2:10 PM PDT</date>\n  <number>2</number>\n  <forecastday>\n  <period>1</period>\n
+        \ <icon>nt_cloudy</icon>\n\t <icons>\n  <icon_set name=\"Default\">\n\t <icon_url>http://icons.wxug.com/i/c/a/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Smiley\">\n\t <icon_url>http://icons.wxug.com/i/c/b/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Generic\">\n\t <icon_url>http://icons.wxug.com/i/c/c/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Old School\">\n\t <icon_url>http://icons.wxug.com/i/c/d/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Cartoon\">\n\t <icon_url>http://icons.wxug.com/i/c/e/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Mobile\">\n\t <icon_url>http://icons.wxug.com/i/c/f/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Simple\">\n\t <icon_url>http://icons.wxug.com/i/c/g/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Contemporary\">\n\t <icon_url>http://icons.wxug.com/i/c/h/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Helen\">\n\t <icon_url>http://icons.wxug.com/i/c/i/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Incredible\">\n\t <icon_url>http://icons.wxug.com/i/c/k/nt_cloudy.gif</icon_url>\n\t
+        </icon_set>\n\t </icons>\n  <title>Tonight</title>\n  <fcttext>Mostly cloudy.
+        Patchy fog and drizzle after midnight. Lows in the upper 50s. Southwest winds
+        10 to 20 mph. </fcttext>\n  </forecastday>\n  <forecastday>\n  <period>2</period>\n
+        \ <icon>cloudy</icon>\n\t <icons>\n  <icon_set name=\"Default\">\n\t <icon_url>http://icons.wxug.com/i/c/a/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Smiley\">\n\t <icon_url>http://icons.wxug.com/i/c/b/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Generic\">\n\t <icon_url>http://icons.wxug.com/i/c/c/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Old School\">\n\t <icon_url>http://icons.wxug.com/i/c/d/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Cartoon\">\n\t <icon_url>http://icons.wxug.com/i/c/e/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Mobile\">\n\t <icon_url>http://icons.wxug.com/i/c/f/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Simple\">\n\t <icon_url>http://icons.wxug.com/i/c/g/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Contemporary\">\n\t <icon_url>http://icons.wxug.com/i/c/h/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Helen\">\n\t <icon_url>http://icons.wxug.com/i/c/i/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Incredible\">\n\t <icon_url>http://icons.wxug.com/i/c/k/cloudy.gif</icon_url>\n\t
+        </icon_set>\n\t </icons>\n  <title>Wednesday</title>\n  <fcttext>Mostly cloudy.
+        Patchy fog and drizzle in the morning. Highs in the 60s to lower 70s. Southwest
+        winds 10 to 15 mph. </fcttext>\n  </forecastday>\n  <forecastday>\n  <period>3</period>\n
+        \ <icon>nt_partlycloudy</icon>\n\t <icons>\n  <icon_set name=\"Default\">\n\t
+        <icon_url>http://icons.wxug.com/i/c/a/nt_partlycloudy.gif</icon_url>\n\t </icon_set>\n
+        \ <icon_set name=\"Smiley\">\n\t <icon_url>http://icons.wxug.com/i/c/b/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Generic\">\n\t <icon_url>http://icons.wxug.com/i/c/c/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Old School\">\n\t <icon_url>http://icons.wxug.com/i/c/d/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Cartoon\">\n\t <icon_url>http://icons.wxug.com/i/c/e/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Mobile\">\n\t <icon_url>http://icons.wxug.com/i/c/f/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Simple\">\n\t <icon_url>http://icons.wxug.com/i/c/g/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Contemporary\">\n\t <icon_url>http://icons.wxug.com/i/c/h/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Helen\">\n\t <icon_url>http://icons.wxug.com/i/c/i/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Incredible\">\n\t <icon_url>http://icons.wxug.com/i/c/k/nt_partlycloudy.gif</icon_url>\n\t
+        </icon_set>\n\t </icons>\n  <title>Wednesday Night</title>\n  <fcttext>Partly
+        cloudy in the evening then becoming cloudy. Patchy fog and drizzle after midnight.
+        Lows in the upper 50s. Southwest winds 10 to 20 mph. </fcttext>\n  </forecastday>\n
+        \ <forecastday>\n  <period>4</period>\n  <icon>cloudy</icon>\n\t <icons>\n
+        \ <icon_set name=\"Default\">\n\t <icon_url>http://icons.wxug.com/i/c/a/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Smiley\">\n\t <icon_url>http://icons.wxug.com/i/c/b/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Generic\">\n\t <icon_url>http://icons.wxug.com/i/c/c/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Old School\">\n\t <icon_url>http://icons.wxug.com/i/c/d/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Cartoon\">\n\t <icon_url>http://icons.wxug.com/i/c/e/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Mobile\">\n\t <icon_url>http://icons.wxug.com/i/c/f/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Simple\">\n\t <icon_url>http://icons.wxug.com/i/c/g/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Contemporary\">\n\t <icon_url>http://icons.wxug.com/i/c/h/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Helen\">\n\t <icon_url>http://icons.wxug.com/i/c/i/cloudy.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Incredible\">\n\t <icon_url>http://icons.wxug.com/i/c/k/cloudy.gif</icon_url>\n\t
+        </icon_set>\n\t </icons>\n  <title>Thursday</title>\n  <fcttext>Cloudy in
+        the morning then becoming partly cloudy. Patchy fog and drizzle in the morning.
+        Highs in the 60s to lower 70s. Southwest winds 5 to 15 mph. </fcttext>\n  </forecastday>\n
+        \ <forecastday>\n  <period>5</period>\n  <icon>nt_sunny</icon>\n\t <icons>\n
+        \ <icon_set name=\"Default\">\n\t <icon_url>http://icons.wxug.com/i/c/a/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Smiley\">\n\t <icon_url>http://icons.wxug.com/i/c/b/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Generic\">\n\t <icon_url>http://icons.wxug.com/i/c/c/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Old School\">\n\t <icon_url>http://icons.wxug.com/i/c/d/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Cartoon\">\n\t <icon_url>http://icons.wxug.com/i/c/e/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Mobile\">\n\t <icon_url>http://icons.wxug.com/i/c/f/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Simple\">\n\t <icon_url>http://icons.wxug.com/i/c/g/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Contemporary\">\n\t <icon_url>http://icons.wxug.com/i/c/h/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Helen\">\n\t <icon_url>http://icons.wxug.com/i/c/i/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n  <icon_set name=\"Incredible\">\n\t <icon_url>http://icons.wxug.com/i/c/k/nt_sunny.gif</icon_url>\n\t
+        </icon_set>\n\t </icons>\n  <title>Thursday Night</title>\n  <fcttext>Mostly
+        clear in the evening then becoming mostly cloudy. Patchy fog and drizzle after
+        midnight. Lows in the upper 50s. Southwest winds 10 to 20 mph. </fcttext>\n
+        \ </forecastday>\n\t</txt_forecast>\n<simpleforecast>\n  <forecastday>\n  <period>1</period>\n
+        \ <date>\n  <epoch>1409724000</epoch>\n  <pretty_short>11:00 PM PDT</pretty_short>\n
+        \ <pretty>11:00 PM PDT on September 02, 2014</pretty>\n  <day>2</day>\n  <month>9</month>\n
+        \ <year>2014</year>\n  <yday>244</yday>\n  <hour>23</hour>\n  <min>00</min>\n
+        \ <sec>0</sec>\n  <isdst>1</isdst>\n  <monthname>September</monthname>\n  <weekday_short></weekday_short>\n
+        \ <weekday>Tuesday</weekday>\n  <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n
+        \ <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n            <high>\r\n
+        \             <fahrenheit>72</fahrenheit>\r\n              <celsius>22</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>61</fahrenheit>\r\n
+        \             <celsius>16</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>partlycloudy</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <forecastday>\r\n
+        \           <period>2</period>\r\n            <date>\n  <epoch>1409810400</epoch>\n
+        \ <pretty_short>11:00 PM PDT</pretty_short>\n  <pretty>11:00 PM PDT on September
+        03, 2014</pretty>\n  <day>3</day>\n  <month>9</month>\n  <year>2014</year>\n
+        \ <yday>245</yday>\n  <hour>23</hour>\n  <min>00</min>\n  <sec>0</sec>\n  <isdst>1</isdst>\n
+        \ <monthname>September</monthname>\n  <weekday_short></weekday_short>\n  <weekday>Wednesday</weekday>\n
+        \ <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n  <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n
+        \           <high>\r\n              <fahrenheit>70</fahrenheit>\r\n              <celsius>21</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>61</fahrenheit>\r\n
+        \             <celsius>16</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>partlycloudy</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <forecastday>\r\n
+        \           <period>3</period>\r\n            <date>\n  <epoch>1409896800</epoch>\n
+        \ <pretty_short>11:00 PM PDT</pretty_short>\n  <pretty>11:00 PM PDT on September
+        04, 2014</pretty>\n  <day>4</day>\n  <month>9</month>\n  <year>2014</year>\n
+        \ <yday>246</yday>\n  <hour>23</hour>\n  <min>00</min>\n  <sec>0</sec>\n  <isdst>1</isdst>\n
+        \ <monthname>September</monthname>\n  <weekday_short></weekday_short>\n  <weekday>Thursday</weekday>\n
+        \ <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n  <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n
+        \           <high>\r\n              <fahrenheit>70</fahrenheit>\r\n              <celsius>21</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>59</fahrenheit>\r\n
+        \             <celsius>15</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>partlycloudy</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <forecastday>\r\n
+        \           <period>4</period>\r\n            <date>\n  <epoch>1409983200</epoch>\n
+        \ <pretty_short>11:00 PM PDT</pretty_short>\n  <pretty>11:00 PM PDT on September
+        05, 2014</pretty>\n  <day>5</day>\n  <month>9</month>\n  <year>2014</year>\n
+        \ <yday>247</yday>\n  <hour>23</hour>\n  <min>00</min>\n  <sec>0</sec>\n  <isdst>1</isdst>\n
+        \ <monthname>September</monthname>\n  <weekday_short></weekday_short>\n  <weekday>Friday</weekday>\n
+        \ <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n  <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n
+        \           <high>\r\n              <fahrenheit>68</fahrenheit>\r\n              <celsius>20</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>59</fahrenheit>\r\n
+        \             <celsius>15</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>mostlysunny</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <forecastday>\r\n
+        \           <period>5</period>\r\n            <date>\n  <epoch>1410069600</epoch>\n
+        \ <pretty_short>11:00 PM PDT</pretty_short>\n  <pretty>11:00 PM PDT on September
+        06, 2014</pretty>\n  <day>6</day>\n  <month>9</month>\n  <year>2014</year>\n
+        \ <yday>248</yday>\n  <hour>23</hour>\n  <min>00</min>\n  <sec>0</sec>\n  <isdst>1</isdst>\n
+        \ <monthname>September</monthname>\n  <weekday_short></weekday_short>\n  <weekday>Saturday</weekday>\n
+        \ <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n  <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n
+        \           <high>\r\n              <fahrenheit>72</fahrenheit>\r\n              <celsius>22</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>61</fahrenheit>\r\n
+        \             <celsius>16</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>sunny</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n        <forecastday>\r\n
+        \           <period>6</period>\r\n            <date>\n  <epoch>1410156000</epoch>\n
+        \ <pretty_short>11:00 PM PDT</pretty_short>\n  <pretty>11:00 PM PDT on September
+        07, 2014</pretty>\n  <day>7</day>\n  <month>9</month>\n  <year>2014</year>\n
+        \ <yday>249</yday>\n  <hour>23</hour>\n  <min>00</min>\n  <sec>0</sec>\n  <isdst>1</isdst>\n
+        \ <monthname>September</monthname>\n  <weekday_short></weekday_short>\n  <weekday>Sunday</weekday>\n
+        \ <ampm>PM</ampm>\n  <tz_short>PDT</tz_short>\n  <tz_long>America/Los_Angeles</tz_long>\n</date>\r\n
+        \           <high>\r\n              <fahrenheit>68</fahrenheit>\r\n              <celsius>20</celsius>\r\n
+        \           </high>\r\n            <low>\r\n              <fahrenheit>59</fahrenheit>\r\n
+        \             <celsius>15</celsius>\r\n            </low>\r\n            <conditions>Partly
+        Cloudy</conditions>\r\n            <icon>partlycloudy</icon>\r\n\t        <icons>\r\n
+        \   \t        <icon_set name=\"Default\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/a/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Smiley\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/b/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Generic\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/c/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Old School\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/d/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Cartoon\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/e/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Mobile\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/f/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Simple\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/g/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Contemporary\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/h/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Helen\">\r\n\t                <icon_url>http://icons.wxug.com/i/c/i/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n    \t        <icon_set name=\"Incredible\">\r\n\t
+        \               <icon_url>http://icons.wxug.com/i/c/k/partlycloudy.gif</icon_url>\r\n\t
+        \           </icon_set>\r\n\t        </icons>\r\n            <skyicon>mostlysunny</skyicon>\r\n\t\t\t<pop>0</pop>\r\n
+        \       </forecastday>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</simpleforecast>\r\n<moon_phase>\r\n
+        \       <percentIlluminated>56</percentIlluminated>\r\n        <ageOfMoon>8</ageOfMoon>\r\n\t\t<current_time>\r\n\t\t\t<hour>17</hour>\r\n\t\t\t<minute>02</minute>\r\n\t\t</current_time>\r\n
+        \       <sunset>\r\n            <hour>19</hour>\r\n            <minute>37</minute>\r\n
+        \       </sunset>\r\n        <sunrise>\r\n            <hour>6</hour>\r\n            <minute>40</minute>\r\n
+        \       </sunrise>\r\n</moon_phase>\r\n</forecast>\r\n\r\n"
+    http_version: 
+  recorded_at: Wed, 03 Sep 2014 00:02:20 GMT
+recorded_with: VCR 2.9.2

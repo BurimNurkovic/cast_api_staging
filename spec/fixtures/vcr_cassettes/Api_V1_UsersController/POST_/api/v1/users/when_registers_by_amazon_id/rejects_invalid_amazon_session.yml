@@ -1,0 +1,39 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.amazon.com/auth/O2/tokeninfo?access_token=fail
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers: {}
+  response:
+    status:
+      code: 400
+      message: Bad Request
+    headers:
+      Date:
+      - Thu, 25 Sep 2014 17:08:03 GMT
+      Server:
+      - Server
+      X-Amzn-Requestid:
+      - 831970c5-44d6-11e4-8b05-6b1bfe567d5f
+      X-Amz-Date:
+      - Thu, 25 Sep 2014 17:08:04 GMT
+      X-Amzn-Errortype:
+      - InvalidTokenException:http://internal.amazon.com/coral/com.amazon.panda/
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '99'
+      Vary:
+      - Accept-Encoding,User-Agent
+      Nncoection:
+      - close
+    body:
+      encoding: UTF-8
+      string: '{"error":"invalid_token","error_description":"The request has an invalid
+        parameter : access_token"}'
+    http_version: 
+  recorded_at: Thu, 25 Sep 2014 17:08:04 GMT
+recorded_with: VCR 2.9.2

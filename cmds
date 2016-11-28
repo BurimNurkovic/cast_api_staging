@@ -1,0 +1,3 @@
+rails g model Question text question_type:integer order_by:integer --no-assets
+rails g model Answer text order_by:integer --no-assets
+rails g model Response user:references question:references answer:references --no-assets

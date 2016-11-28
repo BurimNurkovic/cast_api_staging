@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://graph.facebook.com/me?access_token=CAACEdEose0cBAJSb8gOYzXZAiYgtmfTLWWztFDJnvd59POTVmZCZA4ZC52DIZBo85HjJHZAGIyZBIzpTEXSUyu1DfKJ0kfF43RGV7oZBxhp9QciJtOg4rOkcwDet4b67gAV6tbOyWrUZA5OP3sA8UzsGJqGfk3Soq4DIX46eScyaptNgUcg5mevVOUDdIiQ5dOKOzAohj42DnLD6xDhJUkXSCyuQgQYRZAmpoZD
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.9.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Last-Modified:
+      - '2014-03-23T16:28:28+0000'
+      Facebook-Api-Version:
+      - v1.0
+      Etag:
+      - '"bb5166503bbd0f68ef309dd52a28d77414528152"'
+      Content-Type:
+      - application/json; charset=UTF-8
+      Pragma:
+      - no-cache
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Fb-Rev:
+      - '1430052'
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      Expires:
+      - Sat, 01 Jan 2000 00:00:00 GMT
+      X-Fb-Debug:
+      - "+znmfltUyn8N5Ox2T6xmNGtLd7Tk3Tz3UCvw40s25HV38+fAjU2KFpSElHZaXfO2Xl3I2i0l3LA0GD5behLwfw=="
+      Date:
+      - Thu, 25 Sep 2014 17:08:01 GMT
+      Connection:
+      - keep-alive
+      Content-Length:
+      - '637'
+    body:
+      encoding: UTF-8
+      string: '{"id":"100004866240221","education":[{"school":{"id":"107967495902873","name":"\u0428\u043a\u043e\u043b\u0430
+        \u2116 113"},"type":"High School"},{"school":{"id":"103491749742154","name":"Moscow
+        State Institute of Radio Engineering, Electronics and Automation"},"type":"College"}],"first_name":"Sergey","gender":"male","hometown":{"id":"115085015172389","name":"Moscow,
+        Russia"},"last_name":"Novik","link":"https:\/\/www.facebook.com\/konnigun","location":{"id":"115085015172389","name":"Moscow,
+        Russia"},"locale":"en_US","name":"Sergey  Novik","timezone":2,"updated_time":"2014-03-23T16:28:28+0000","username":"konnigun","verified":true}'
+    http_version: 
+  recorded_at: Thu, 25 Sep 2014 17:08:01 GMT
+recorded_with: VCR 2.9.2
