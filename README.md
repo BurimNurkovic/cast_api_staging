@@ -45,7 +45,7 @@ Installation
 --------------
 
 ```sh
-git clone git@github.com:kollectivemobile/Cast_Api.git cast_api
+git clone ...
 cd cast_api
 bundle
 ```
@@ -61,21 +61,3 @@ be rspec
 All the tests should be green.
 
 
-
-License
-----
-
-All the rights belong to Sian Morson.
-
-[Koala]:https://github.com/arsduo/koala
-[Bitly]:https://bitly.com/
-[SimpleCov]:https://github.com/colszowka/simplecov
-[VCR]:https://github.com/vcr/vcr
-[Paperclip]:https://github.com/thoughtbot/paperclip
-[node.js]:http://nodejs.org
-[Twitter Bootstrap]:http://twitter.github.com/bootstrap/
-[keymaster.js]:https://github.com/madrobby/keymaster
-[jQuery]:http://jquery.com
-[@tjholowaychuk]:http://twitter.com/tjholowaychuk
-[express]:http://expressjs.com
-[barometer]:https://github.com/attack/barometer
