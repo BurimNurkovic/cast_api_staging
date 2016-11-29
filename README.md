@@ -17,7 +17,9 @@ Tech
 User can register in application using email, Facebook or Amazon account. Email one is a pretty straightforward (Devise registation with frontend features disabled), while for facebook and amazon signup facebook what we do is call Facebook/Amazon API to verify that facebook/amazon token sent is valid and matches id sent, and then we create the user in database, referencing him by facebook/amazon id sent. When signing in, we validate token again the same way, and then find the user with this facebook/amazon id in database (and he is signed in successfuly than).
 
 Every midnight we delay two rake jobs for registered users, the job is same, it's just gonna be run at different times: 9am and 12am currently. This job does the following:
+
 1). Check the weather at current time, using user's latitude and longitude he set in his profile during sign up or profile update (for weather check we use [Barometer] gem).
+
 2). Take user's weather, skin type, hair type, and current time - and find PushCondition, that meets those requirements. If it does - send a push note to user.
 
 Each PushCondition has multiple PushTexts, and when sending user a push note we choose an unique one, the one, which he didn't receive yet.
